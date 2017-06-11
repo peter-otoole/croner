@@ -30,7 +30,7 @@ let configuration = validate(cli)
 
 // Call main code to rename files in selected folder
 const rename_files = require("./lib/rename_files")
-rename_files(configuration.path, configuration.pattern, configuration.selectedTimestamp, (error, result) => {
+rename_files(configuration.path, configuration.pattern, (error, result) => {
 
     log.info("Index file done")
 

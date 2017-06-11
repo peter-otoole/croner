@@ -2,18 +2,20 @@
 	"name": "order-files",
 	"version": "1.0.0",
 	"description": "Command line tools order files in a folder by name, ordering based on creation date",
-	"bin" : {
-		"order_files" : "./index.js"
+	"bin": {
+		"order_files": "./index.js"
 	},
 	"engines": {
 		"node": "6.9.3"
 	},
-	"dependencies": {		
-		"request": "2.78.0",
+	"dependencies": {
+		"async": "^2.1.2",
 		"colors": "1.1.2",
-		"yargs": "4.8.0",
-		"async": "2.1.2",
-		"uuid": "3.0.1"
+		"exif": "^0.6.0",
+		"moment": "^2.18.1",
+		"request": "2.78.0",
+		"uuid": "3.0.1",
+		"yargs": "4.8.0"
 	},
 	"scripts": {},
 	"author": "Peter O'Toole",
