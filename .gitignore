@@ -10,7 +10,7 @@ $RECYCLE.BIN/
 
 # Node modules install folder
 node_modules/
-svc-application/node_modules/
+node_modules/*
 
 # Windows Installer files
 *.cab
@@ -47,6 +47,7 @@ Icon
 
 # Ignore idea files... no need to commit Webstorm changes
 .idea
+.idea/*
 
 # Ignore configuration file commit
 configuration.json
@@ -54,4 +55,6 @@ configuration.json
 # Ignore files ending in log... no need to commit log files
 *.log
 
-node_modules/*
+# Ignore vs code folder
+.vscode
+.vscode/*
