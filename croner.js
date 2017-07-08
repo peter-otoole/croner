@@ -11,7 +11,7 @@ const log = utils.log
 
 // Create exception handler 
 const handleUncaughtExceptions = require("./lib/uncaught_exception_handler")
-handleUncaughtExceptions.attachListener(utils.constants.too_name)
+handleUncaughtExceptions.attachListener(utils.constants.tool_name)
 
 // Create interface
 const interface = require("./lib/interface")()
@@ -32,7 +32,7 @@ let configuration = validate(cli)
 const rename_files = require("./lib/rename_files")
 rename_files(configuration.path, configuration.pattern, (error, result) => {
 
-    log.info("Index file done")
+    log.info("main file done")
 
     // Print end
     helpers.printEnd()

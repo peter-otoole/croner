@@ -1,7 +1,7 @@
 @IF EXIST "%~dp0\node.exe" (
-  "%~dp0\node.exe"  "%~dp0\..\index.js" %*
+  "%~dp0\node.exe"  "%~dp0\..\croner.js" %*
 ) ELSE (
   @SETLOCAL
   @SET PATHEXT=%PATHEXT:;.JS;=;%
-  node  "%~dp0\..\index.js" %*
+  node  "%~dp0\..\croner.js" %*
 )
