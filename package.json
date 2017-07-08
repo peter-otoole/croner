@@ -3,7 +3,7 @@
     "version": "0.0.1",
     "description": "Command line tool to cronologically order JPG files in a folder using their EXIF creation timestamp",
     "bin": {
-        "croner": "./croner.js"
+        "croner": "./bin/croner.cmd"
     },
     "main": "croner.js",
     "man": "./readme.md",
