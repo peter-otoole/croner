@@ -32,7 +32,7 @@ let configuration = validate(cli)
 const rename_files = require("./lib/rename_files")
 rename_files(configuration.path, configuration.pattern, (error, result) => {
 
-    log.info("main file done")
+    log.info("Finished renaming files")
 
     // Print end
     helpers.printEnd()
