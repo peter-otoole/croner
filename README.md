@@ -54,3 +54,7 @@ Currently, croner does not have unit tests so there are likely edge case issues.
 # Warning
 
 There is an issue with sorting burst shots - EXIF records to "second" accuracy, not "millisecond" accuracy, and therefore if there are more than one image with the same timestamp (down to the second), they can be sorted out of order. Future versions will fix this. 
+
+# License
+
+See license.txt (https://github.com/peter-otoole/croner/blob/master/license.txt)
