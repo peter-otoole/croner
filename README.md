@@ -47,11 +47,23 @@ Options:
   -h, --help            Show help                                      [boolean]
 ```
 
+# Testing
+
+Currently, croner does not have any unit tests. All tests are manual and all edge cases are not covered. If an issue is found, please report it. 
+
 # Support
 
-Currently, croner does not have unit tests so there are likely edge case issues. Croner is also untested on Linux - use Windows until this is resolved.
+Currently, croner is only supported on Windows OS. Linux support is planned. 
 
-# Warning
+# Warnings
+
+1. Before running croner on any set of picutres, create a copy of the folder as the changes may not be reversable. 
+
+2. See issue "Issue 1 - Bursts sorted out of order"
+
+# Current known Issues
+
+## Issue 1 - Bursts sorted out of order
 
 There is an issue with sorting burst shots - EXIF records to "second" accuracy, not "millisecond" accuracy, and therefore if there are more than one image with the same timestamp (down to the second), they can be sorted out of order. Future versions will fix this. 
 
