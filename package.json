@@ -8,7 +8,7 @@
     "main": "croner.js",
     "man": "./readme.md",
     "engines": {
-        "node": "6.9.3"
+        "node": "9.2.1"
     },
     "dependencies": {
         "async": "^2.1.2",

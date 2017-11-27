@@ -6,7 +6,7 @@ Command line tool to cronologically order JPG files in a folder using their EXIF
 
 # Install 
 
-1. Install node.js from here - https://nodejs.org/dist/v7.9.0/
+1. Install node.js from here - https://nodejs.org/dist/v9.2.0/
 2. Open Command Prompt
 3. Enter the following:  
 
@@ -22,10 +22,10 @@ croner -h
 # Help 
 
 ``` batch
-croner -h
+> croner -h
 
  Chronologically orders JPEG files in a folder based on their EXIF creation
- date. New filenames take the form YYYYMMDD_NNNNNN.jpg
+ date. New filenames take the form YYYYMMDD_HHMMss.jpg
 
  Usage: croner [options]
 
