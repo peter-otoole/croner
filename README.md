@@ -1,25 +1,22 @@
-
-
-
 # croner
-Command line tool to cronologically order JPG files in a folder using their EXIF creation timestamp
+Command line tool to chronologically order JPG files in a folder using their EXIF creation timestamp
 
-# Install 
+## Install
 
 1. Install node.js from here - https://nodejs.org/dist/v9.2.0/
 2. Open Command Prompt
-3. Enter the following:  
+3. Enter the following:
 
 ```
-npm install -g peter-otoole/croner
+npm i -g peter-otoole/croner
 ```
-4. Use croner via the command line - see help by entering: 
+4. Use croner via the command line - see help by entering:
 
 ```
 croner -h
 ```
 
-# Help 
+## Help
 
 ``` batch
 > croner -h
@@ -47,26 +44,26 @@ Options:
   -h, --help            Show help                                      [boolean]
 ```
 
-# Testing
+## Testing
 
-Currently, croner does not have any unit tests. All tests are manual and all edge cases are not covered. If an issue is found, please report it. 
+Currently, croner does not have any unit tests. All tests are manual and all edge cases are not covered. If an issue is found, please report it.
 
-# Support
+## Support
 
-Currently, croner is only supported on Windows OS. Linux support is planned. 
+Currently, croner is only supported on Windows OS. Linux support is planned.
 
-# Warnings
+## Warnings
 
-1. Before running croner on any set of picutres, create a copy of the folder as the changes may not be reversable. 
+1. Before running croner on any set of pictures, create a copy of the folder as the changes may not be reversible.
 
 2. See issue "Issue 1 - Bursts sorted out of order"
 
-# Current known Issues
+## Current known Issues
 
-## Issue 1 - Bursts sorted out of order
+### Issue 1 - Bursts sorted out of order
 
-There is an issue with sorting burst shots - EXIF records to "second" accuracy, not "millisecond" accuracy, and therefore if there are more than one image with the same timestamp (down to the second), they can be sorted out of order. Future versions will fix this. 
+There is an issue with sorting burst shots - EXIF records to "second" accuracy, not "millisecond" accuracy, and therefore if there are more than one image with the same timestamp (down to the second), they can be sorted out of order. Future versions will fix this.
 
-# License
+## License
 
 See license.txt (https://github.com/peter-otoole/croner/blob/master/license.txt)

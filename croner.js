@@ -1,15 +1,13 @@
 /**
- * Copyright 2017 Peter O'Toole.
- *
+ * @copyright 2018 Peter O'Toole.
  * @author peter-otoole
- * @created 28 May 2017
  */
 
 const utils = require("./lib/utils")
 const helpers = require("./lib/helpers")
 const log = utils.log
 
-// Create exception handler 
+// Create exception handler
 const handleUncaughtExceptions = require("./lib/uncaught_exception_handler")
 handleUncaughtExceptions.attachListener(utils.constants.tool_name)
 
