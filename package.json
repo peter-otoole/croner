@@ -22,5 +22,9 @@
     "scripts": {},
     "author": "Peter O'Toole",
     "license": "MIT",
-    "private": true
+    "private": true,
+    "devDependencies": {
+        "eslint": "^5.6.0",
+        "eslint-config-google": "^0.10.0"
+    }
 }
