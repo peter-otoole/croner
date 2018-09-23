@@ -1,0 +1,10 @@
+{
+    "extends": "google",
+    "parserOptions": {
+        "ecmaVersion": 2017
+    },
+    "rules": {
+        "max-len": [2, { "code": 160 }],
+        "camelcase": [0, {"properties": "always"}] 
+    }
+}
