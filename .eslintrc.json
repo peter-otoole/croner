@@ -1,15 +1,40 @@
 {
-    "extends": "google",
+    "root":true,
+    "extends": [
+        "google",
+        "plugin:security/recommended"
+    ],
+    "plugins":[
+        "import",
+        "node",
+        "promise",
+        "standard",
+        "security"
+    ],
     "env": {
         "browser": false,
-        "node": true
+        "node": true,
+        "es6": true,
+        "mocha":true
     },
     "parserOptions": {
         "ecmaVersion": 9
     },
     "rules": {
         "max-len": [2, { "code": 160 }],
-        "camelcase": [0, {"properties": "always"}],
-        "valid-jsdoc": [2, { "prefer": { "return": "returns" } }]
+        "camelcase":["off",{"properties":"never"}],
+        "valid-jsdoc":[
+            "warn",
+            {
+              "prefer":{
+                "arg":"param",
+                "argument":"param",
+                "return":"returns"
+              },
+              "requireReturn":false,
+              "requireParamDescription":false,
+              "requireReturnDescription":false
+            }
+        ]
     }
 }
