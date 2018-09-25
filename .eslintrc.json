@@ -23,6 +23,7 @@
     "rules": {
         "max-len": [2, { "code": 160 }],
         "camelcase":["off",{"properties":"never"}],
+        "semi": ["error", "never", { "beforeStatementContinuationChars": "never"}],
         "valid-jsdoc":[
             "warn",
             {
