@@ -25,6 +25,8 @@
         "camelcase":["off",{"properties":"never"}],
         "semi": ["error", "never", { "beforeStatementContinuationChars": "never"}],
         "security/detect-non-literal-fs-filename": "off",
+        "security/detect-non-literal-regexp": "off",
+        "security/detect-object-injection": "off",
         "valid-jsdoc":[
             "warn",
             {
