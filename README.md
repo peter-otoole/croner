@@ -1,5 +1,5 @@
 # croner
-Command line tool to chronologically order JPG files in a folder using their EXIF creation timestamp
+Command line tool to chronologically order JPG files in a folder using their EXIF creation timestamp. Croner also allows order of any type of file based on their creation and update timestamps.
 
 ## Install
 
@@ -8,7 +8,7 @@ Command line tool to chronologically order JPG files in a folder using their EXI
 3. Enter the following:
 
 ```
-npm i -g peter-otoole/croner
+npm i peter-otoole/croner -g
 ```
 4. Use croner via the command line - see help by entering:
 
@@ -31,6 +31,7 @@ croner -h
 
 
 Options:
+  --version             Show version number                            [boolean]
   -f, --folder          the folder location of the files to be sorted
                                                              [string] [required]
   -p, --pattern         filename pattern to match, defaults to '^.+[.]jpg$'.
@@ -46,7 +47,7 @@ Options:
 
 ## Testing
 
-Currently, croner does not have any unit tests. All tests are manual and all edge cases are not covered. If an issue is found, please report it.
+Currently, croner does not have any unit tests. All tests are manual and all edge cases are not covered. If any issues are found, please report them.
 
 ## Support
 
@@ -54,15 +55,7 @@ Currently, croner is only supported on Windows OS. Linux support is planned.
 
 ## Warnings
 
-1. Before running croner on any set of pictures, create a copy of the folder as the changes may not be reversible.
-
-2. See issue "Issue 1 - Bursts sorted out of order"
-
-## Current known Issues
-
-### Issue 1 - Bursts sorted out of order
-
-There is an issue with sorting burst shots - EXIF records to "second" accuracy, not "millisecond" accuracy, and therefore if there are more than one image with the same timestamp (down to the second), they can be sorted out of order. Future versions will fix this.
+It is advisable to create a backup of pictures before running croner in case of any non-reversible changes.
 
 ## License
 
