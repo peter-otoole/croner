@@ -15,6 +15,9 @@ const log = utils.log
  * Runs validation on input parameters and runs main logic
  */
 async function main() {
+  // Print start
+  helpers.printStart()
+
   // Create exception handler
   handleUncaughtExceptions.attachListener(utils.constants.tool_name)
 
@@ -51,7 +54,4 @@ function end(code) {
   process.exit(code)
 }
 
-// Print start
-helpers.printStart()
-// Run main
-main()
+module.exports = main
