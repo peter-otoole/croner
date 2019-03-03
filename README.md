@@ -1,10 +1,10 @@
 # croner
-Command line tool to chronologically order JPG files in a folder using their EXIF creation timestamp. Croner also allows order of any type of file based on their creation and update timestamps.
+Command line tool to chronologically order JPG files using their EXIF creation timestamp. Croner also allows ordering of any type of file based on their creation and update timestamps.
 
 ## Install
 
-1. Install node.js from here - https://nodejs.org/dist/v9.2.0/
-2. Open Command Prompt
+1. Install node.js from here - https://nodejs.org/dist/v10.15.2/
+2. Open a CLI window (Command Prompt on Windows, Terminal on Linux)
 3. Enter the following:
 
 ```
@@ -21,20 +21,20 @@ croner -h
 ``` batch
 > croner -h
 
- Chronologically orders JPEG files in a folder based on their EXIF creation
- date. New filenames take the form YYYYMMDD_HHMMss.jpg
+Chronologically orders JPEG files in a folder based on their EXIF creation date.
+New file names take the form YYYYMMDD_HHMMss.jpg
 
- Usage: croner [options]
+Usage: croner [options]
 
- Examples:
-   - croner -f ./pictures/ -p ^img.+[.]jpg$
-
+Examples:
+  - croner
+  - croner -f ./pictures/ -p IMG_*.jpg -i
 
 Options:
   --version             Show version number                            [boolean]
-  -f, --folder          the folder location of the files to be sorted
-                                                             [string] [required]
-  -p, --pattern         filename pattern to match, defaults to '^.+[.]jpg$'.
+  -f, --folder          the folder location of the files to be sorted, defaults
+                        to current directory                            [string]
+  -p, --pattern         glob filename pattern to match, defaults to '**/*.jpg'.
                         NOTE: always case insensitive                   [string]
   -i, --ignoreErrors    ignore errors that occur while reading exif data (skips
                         file)                                          [boolean]
@@ -47,11 +47,11 @@ Options:
 
 ## Testing
 
-Currently, croner does not have any unit tests. All tests are manual and all edge cases are not covered. If any issues are found, please report them.
+Currently, croner does not have any unit tests. All tests are manual and all edge cases are not covered. If any issues are found, please report them by filing a bug.
 
 ## Support
 
-Currently, croner is only supported on Windows OS. Linux support is planned.
+Currently, croner functions on both Windows and Linux OS, however, the majority of testing was done on Windows. If you notice any compatibilities issues, please report them by filing a bug.
 
 ## Warnings
 
