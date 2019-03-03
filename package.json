@@ -1,6 +1,6 @@
 {
     "name": "croner",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "CLI to chronologically order JPG files in a folder using their EXIF creation timestamp",
     "author": "Peter O'Toole",
     "bin": {
