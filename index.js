@@ -2,6 +2,7 @@
  * @copyright 2019 Peter O'Toole
  * @author peter-otoole
  */
+'use strict'
 
 const utils = require('./lib/utils')
 const helpers = require('./lib/helpers')
@@ -22,11 +23,11 @@ async function main() {
   handleUncaughtExceptions.attachListener(utils.constants.tool_name)
 
   // Create interface
-  const interface = require('./lib/interface')()
-  const cli = interface.cli
+  const toolInterface = require('./lib/interface')()
+  const cli = toolInterface.cli
 
   // Set CLI interface for the exception handler and add the logging level
-  handleUncaughtExceptions.attachCli(interface.interface)
+  handleUncaughtExceptions.attachCli(toolInterface.interface)
   utils.setLoggingLevel(cli.v)
 
   try {
