@@ -4,8 +4,12 @@
     "description": "CLI to chronologically order JPG files in a folder using their EXIF creation timestamp",
     "author": "Peter O'Toole",
     "bin": {
-        "croner": "./croner.js"
+        "croner": "./bin/index.js"
     },
+    "files": [
+        "license.txt",
+        "bin"
+    ],
     "main": "croner.js",
     "man": "./readme.md",
     "scripts": {},
