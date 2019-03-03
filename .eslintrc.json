@@ -27,6 +27,7 @@
         "security/detect-non-literal-fs-filename": "off",
         "security/detect-non-literal-regexp": "off",
         "security/detect-object-injection": "off",
+        "linebreak-style": 0,
         "valid-jsdoc":[
             "warn",
             {
