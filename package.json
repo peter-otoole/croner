@@ -13,7 +13,6 @@
         "bin"
     ],
     "main": "croner.js",
-    "man": "./readme.md",
     "scripts": {},
     "engines": {
         "node": "10.15.2"
