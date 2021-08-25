@@ -1,59 +1,6 @@
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
-
-# Folder config file
-Desktop.ini
-
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
 # Node modules install folder
 node_modules/
 node_modules/*
-
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
-
-# =========================
-# Operating System Files
-# =========================
-
-# OSX
-# =========================
-
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Icon must ends with two \r.
-Icon
-
-
-# Thumbnails
-._*
-
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
-
-
-*.metadata
-*.project
-*.settings
-
-# Ignore idea files... no need to commit Webstorm changes
-.idea
-.idea/*
-
-# Ignore configuration file commit
-configuration.json
-
-# Ignore files ending in log... no need to commit log files
-*.log
 
 # Ignore vs code folder
 .vscode
