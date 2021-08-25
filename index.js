@@ -36,7 +36,9 @@ async function main() {
 
     // Call main code to rename files in selected folder
     const exitCode = await renameFiles(configuration.ignoreErrors, configuration.timestamp,
-        configuration.path, configuration.pattern) ? 0 : 1
+      configuration.path, configuration.pattern)
+      ? 0
+      : 1
 
     end(exitCode)
   } catch (error) {

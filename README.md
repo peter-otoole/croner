@@ -3,7 +3,7 @@ Command line tool to chronologically order JPG files using their EXIF creation t
 
 ## Install
 
-1. Install node.js from here - https://nodejs.org/dist/v10.15.2/
+1. Install node.js 14 from here - https://nodejs.org/dist/v14.17.5/
 2. Open a CLI window (Command Prompt on Windows, Terminal on Linux)
 3. Enter the following:
 
