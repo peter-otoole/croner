@@ -19,7 +19,7 @@ croner -h
 ## Help
 
 ``` batch
-> croner -h
+<croner -
 
 Chronologically orders JPEG files in a folder based on their EXIF creation date.
 New file names take the form YYYYMMDD_HHMMss.jpg
@@ -27,11 +27,11 @@ New file names take the form YYYYMMDD_HHMMss.jpg
 Usage: croner [options]
 
 Examples:
-  - croner
-  - croner -f ./pictures/ -p IMG_*.jpg -i
+- croner
+- croner -f ./pictures/ -p IMG_*.jpg -i
 
 Options:
-  --version             Show version number                            [boolean]
+      --version         Show version number                            [boolean]
   -f, --folder          the folder location of the files to be sorted, defaults
                         to current directory                            [string]
   -p, --pattern         glob filename pattern to match, defaults to '**/*.jpg'.
