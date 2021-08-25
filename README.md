@@ -55,7 +55,7 @@ Currently, croner functions on both Windows and Linux OS, however, the majority 
 
 ## Warnings
 
-It is advisable to create a backup of pictures before running croner in case of any non-reversible changes.
+It is advisable to create a backup of pictures before running croner in case of any non-reversible changes. USE WITH YOUR OWN CAUTION.
 
 ## License
 
