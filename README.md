@@ -1,5 +1,8 @@
 # croner
-Command line tool to chronologically order JPG files using their EXIF creation timestamp. Croner also allows ordering of any type of file based on their creation and update timestamps.
+
+Croner, short for "ChRONological ordER," is a command-line tool written in Node.js designed to organize pictures by renaming them to a common name format based on their creation time. Croner first inspects the image files' EXIF and metadata to collect the creation timestamp. It then uses this to rename the file in the following format: "YYYYMMDD_HHmmss" e.g. "20171014_142854", which sorts the pictures chronologically.
+
+This tool is especially useful when using multiple cameras for a photo shoot, e.g. a phone camera and a DSLR. Without the tool, the photos will likely be ordered by their camera type because most DSLRs do not use a timestamp for the filename. This renaming allows you to see all of the pictures sorted chronologically instead.
 
 ## Install
 
