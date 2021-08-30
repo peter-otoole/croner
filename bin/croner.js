@@ -2,5 +2,5 @@
 
 'use strict'
 
-const main = require('../index.js');
+const main = require('../index.js')
 main()
