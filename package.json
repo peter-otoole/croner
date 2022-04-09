@@ -27,7 +27,7 @@
         "glob": "7.1.7",
         "is": "github:rgrannell1/is",
         "is-valid-glob": "1.0.0",
-        "moment": "2.29.1",
+        "moment": "2.29.2",
         "uuid": "8.3.2",
         "yargs": "17.1.1"
     },
