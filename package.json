@@ -21,7 +21,7 @@
         "node": ">=14"
     },
     "dependencies": {
-        "async": "3.2.1",
+        "async": "3.2.2",
         "colors": "1.4.0",
         "exif": "0.6.0",
         "glob": "7.1.7",
